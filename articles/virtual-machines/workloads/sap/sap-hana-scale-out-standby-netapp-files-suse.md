@@ -80,8 +80,7 @@ Before you begin, refer to the following SAP notes and papers:
 * [Azure Virtual Machines DBMS deployment for SAP on Linux][dbms-guide]
 * [SUSE SAP HA Best Practice Guides][suse-ha-guide]: Contains all required information to set up NetWeaver High Availability and SAP HANA System Replication on-premises (to be used as a general baseline; they provide much more detailed information)
 * [SUSE High Availability Extension 12 SP3 Release Notes][suse-ha-12sp3-relnotes]
-* [NetApp SAP Applications on Microsoft Azure using Azure NetApp Files][anf-sap-applications-azure]
-* [SAP HANA on NetApp Systems with Network File System (NFS)](https://www.netapp.com/us/media/tr-4435.pdf): A configuration guide that contains information about how to set up SAP HANA by using Azure NFS by NetApp
+* [SAP Applications on Microsoft Azure using Azure NetApp Files][anf-sap-applications-azure]
 
 
 ## Overview
@@ -332,7 +331,7 @@ Configure and prepare your OS by doing the following steps:
 
     Reboot the VM to activate the changes.  
 
-3. **[A]** Prepare the OS for running SAP HANA on NetApp Systems with NFS, as described in [SAP HANA on NetApp AFF Systems with NFS configuration guide](https://www.netapp.com/us/media/tr-4435.pdf). Create configuration file */etc/sysctl.d/netapp-hana.conf* for the NetApp configuration settings.  
+3. **[A]** Prepare the OS for running SAP HANA on NetApp Systems with NFS, as described in [NetApp SAP Applications on Microsoft Azure using Azure NetApp Files][anf-sap-applications-azure]. Create configuration file */etc/sysctl.d/netapp-hana.conf* for the Azure NetApp Files configuration settings.  
 
     <pre><code>
     vi /etc/sysctl.d/netapp-hana.conf
@@ -366,7 +365,7 @@ Configure and prepare your OS by doing the following steps:
     vm.swappiness=10
     </code></pre>
 
-4. **[A]** Adjust the sunrpc settings, as recommended in the [SAP HANA on NetApp AFF Systems with NFS configuration guide](https://www.netapp.com/us/media/tr-4435.pdf).  
+4. **[A]** Adjust the sunrpc settings, as recommended in [SAP Applications on Microsoft Azure using Azure NetApp Files][anf-sap-applications-azure].  
 
     <pre><code>
     vi /etc/modprobe.d/sunrpc.conf
