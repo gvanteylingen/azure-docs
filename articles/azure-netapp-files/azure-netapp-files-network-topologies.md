@@ -30,8 +30,9 @@ You should understand a few considerations when you plan for Azure NetApp Files 
 
 The features below are currently unsupported for Azure NetApp Files: 
 
-* Network security groups (NSGs) applied to the delegated subnet
-* User-defined routes (UDRs) with address prefix as Azure NetApp files subnet
+* Network security groups (NSGs) applied to the Azure NetApp Files delegated subnet
+* User-defined routes (UDRs) applied to the Azure NetApp Files delegated subnet
+* User-defined routes (UDRs) with address prefix as Azure NetApp Files delegated subnet
 * Azure policies (for example, custom naming policies) on the Azure NetApp Files interface
 * Load balancers for Azure NetApp Files traffic
 
