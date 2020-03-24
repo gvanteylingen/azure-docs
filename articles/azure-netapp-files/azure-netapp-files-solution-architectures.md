@@ -19,9 +19,10 @@ ms.author: b-juche
 # Solution architectures using Azure NetApp Files
 This article provides references to best practices that can help you understand the solution architectures for using Azure NetApp Files.  
 
-## Azure High-Performance Computing (HPC) solutions
+## Azure High-Performance Computing (HPC) and Machine Learning solutions
 
 * [Run reservoir simulation software on Azure](https://docs.microsoft.com/azure/architecture/example-scenario/infrastructure/reservoir-simulation)
+* [Run MPI workloads with Azure Batch and Azure NetApp Files](https://azure.microsoft.com/en-us/resources/run-mpi-workloads-with-azure-batch-and-azure-netapp-files/)
 
 ## Azure Kubernetes Service (AKS) solutions
 
